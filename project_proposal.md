@@ -2,17 +2,13 @@
 
 ## Semester: Spring 2024
 
-This document is to contain your project proposal. __As you complete each of the below sections in this document, please be sure to remove all preamble text so that it does not appear in your work.__
+## GitHub Handle: hayleepierce
 
-## GitHub Handle: Add Your Name Here
+## Name: Haylee Pierce
 
-## Name: Add Your Name Here
+## Major: Computer Science
 
-## Major: TODO (choose: CS, DS, INFM, SE)
-
-## Project Title: Enter The Name Of Your Project
-
-TODO: Create an interesting title for your proposed project that bring a freshness and excitement to the area of this project. Consider using a name that carries some information about what the project and provides some hint at what the project does without being too wordy.
+## Project Title: Corpus Comb
 
 ---
 
@@ -37,5 +33,15 @@ TODO: Discuss the outcomes of your project in this section. Depending on the pro
 TODO: Summarize your work and outline future steps needed to complete to take the project to the next stage (for example, if you were to continue with this project in 600/610). You must also address ethical implications of your project, especially as pertains to the public release or use of your software or methods.
 
 ## References
+
+[1] Michael W. Berry and Jacob Kogan (Eds.). 2010. _Text Mining: Applications and Theory_. John Wiley & Sons, Chichester, UK.
+
+[2] Matt Copperwaite and Charles Leifer. 2015. _Learning Flask Framework: Build Dynamic, Data-driven Websites and Modern Web Applications with Flask_. Packt Publishing, Birmingham, UK.
+
+[3] Yongquan Li. 2022. Python Data Analysis and Attribute Information Extraction Method Based on Intelligent Decision System. _Mobile Information Systems_ 2022, (April 2022), 1–10.
+
+[4] Vincent Smith. 2019. _Go Web Scraping Quick Start Guide: Implement the Power of Go to Scrape and Crawl Data from the Web_. Packt Publishing, Birmingham, UK.
+
+[5] Sholom M. Weiss, Tong Zhang, Nitin Indurkhya, and Fred J. Damerau. 2010. _Text Mining: Predictive Methods for Analyzing Unstructured Information_. Springer Science & Business Media, New York, NY.
 
 TODO: Add references in the [ACM style](https://www.acm.org/publications/authors/reference-formatting). All references must be cited in the proposal.
