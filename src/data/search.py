@@ -1,13 +1,11 @@
 """Function(s) that handle searching."""
 
-
 def find_all(list, string):
     """Return True if all elements occur in the list."""
     for element in list:
         if element not in string:
             return False
     return True
-
 
 def search_corpus(corpus, search_lists):
     """Return all articles the search lists appear in."""

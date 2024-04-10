@@ -6,6 +6,7 @@ import nltk
 from nltk.corpus import stopwords
 from itertools import combinations
 import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup
 
 
 def develop_search_lists(search):
@@ -32,7 +33,7 @@ def develop_search_lists(search):
     return search_lists
 
 
-def develop_corpus(directory):
+def develop_corpus_xml(directory):
     """Develop a list of dictionaries containing the articles' information."""
     corpus = []
     # iterate through all xml files in the corpus
@@ -83,3 +84,20 @@ def develop_corpus(directory):
         # add article to corpus
         corpus.append(article)
     return corpus
+
+
+def develop_corpus_html(directory):
+    corpus = []
+    # iterate through all html files in the corpus
+    for filename in os.listdir(directory):
+        # create empty dictionary for new article
+        article = {}
+        # create the full path for the current file
+        path = os.path.join(directory, filename)
+        # create BeautifulSoup object
+        file = open(path, "r")
+        soup = BeautifulSoup(file.read(), 'html.parser')
+        article["Title"] = soup.title.get_text()
+        article["Content"] = soup.get_text()
+        # add article to corpus
+        corpus.append(article)
