@@ -34,14 +34,25 @@ TODO: Summarize your work and outline future steps needed to complete to take th
 
 ## References
 
-[1] Michael W. Berry and Jacob Kogan (Eds.). 2010. _Text Mining: Applications and Theory_. John Wiley & Sons, Chichester, UK.
+[1] Sai Dheeraj Kanaparthi, Anjali Patle, and K. Jairam Naik. 2023. Prediction and detection of emotional tone in online social media mental disorder groups using regression and recurrent neural networks. _Multimedia Tools and Applications_ 82 (April 2023) 43819–43839. <https://doi.org/10.1007/s11042-023-15316-x>
 
-[2] Matt Copperwaite and Charles Leifer. 2015. _Learning Flask Framework: Build Dynamic, Data-driven Websites and Modern Web Applications with Flask_. Packt Publishing, Birmingham, UK.
+[2] Ilias Chalkias, Katerina Tzafilkou, Dimitrios Karapiperis, and Christos Tjortjis. 2023. Learning Analytics on YouTube Educational Videos: Exploring
+Sentiment Analysis Methods and Topic Clustering. _Electronics_ 12, 18 (Sep. 2023) 1-13. <https://doi.org/10.3390/electronics12183949>
 
-[3] Yongquan Li. 2022. Python Data Analysis and Attribute Information Extraction Method Based on Intelligent Decision System. _Mobile Information Systems_ 2022, (April 2022), 1–10.
+[3] Wajdi Aljedaani, Furqan Rustam, Mohamed Wiem Mkaouer, Abdullatif Ghallab, Vaibhav Rupapara, Patrick Bernard Washington, Ernesto Lee, and Imran Ashraf. 2022. Sentiment analysis on Twitter data integrating TextBlob and deep learning models: The case of US airline industry. _Knowledge-Based _Systems_ 255 (Nov. 2022) 1-15. <https://doi.org/10.1016/j.knosys.2022.109780>
 
-[4] Vincent Smith. 2019. _Go Web Scraping Quick Start Guide: Implement the Power of Go to Scrape and Crawl Data from the Web_. Packt Publishing, Birmingham, UK.
+[4] S. V. Praveen1 and Vajratiya Vajrobol. 2023. Understanding the Perceptions of Healthcare Researchers Regarding ChatGPT: A Study Based on Bidirectional Encoder Representation from Transformers (BERT) Sentiment Analysis and Topic Modeling. _Annals of Biomedical Engineering_ 51 (May 2023) 1654–1656. <https://doi.org/10.1007/s10439-023-03222-0>
 
-[5] Sholom M. Weiss, Tong Zhang, Nitin Indurkhya, and Fred J. Damerau. 2010. _Text Mining: Predictive Methods for Analyzing Unstructured Information_. Springer Science & Business Media, New York, NY.
+[5] Shivaji Alaparthi and Manit Mishra. 2021. BERT: a sentiment analysis odyssey. _Journal of Marketing Analytics_ 9 (Feb. 2021) 118–126. <https://doi.org/10.1057/s41270-021-00109-8>
+
+[6] Yongquan Li. 2022. Python Data Analysis and Attribute Information Extraction Method Based on Intelligent Decision System. _Mobile Information Systems_ 2022, (April 2022), 1–10. <https://doi.org/10.1155/2022/2495166>
+
+[7] Michael W. Berry and Jacob Kogan (Eds.). 2010. _Text Mining: Applications and Theory_. John Wiley & Sons, Chichester, UK.
+
+[8] Sholom M. Weiss, Tong Zhang, Nitin Indurkhya, and Fred J. Damerau. 2010. _Text Mining: Predictive Methods for Analyzing Unstructured Information_. Springer Science & Business Media, New York, NY.
+
+[9] Vincent Smith. 2019. _Go Web Scraping Quick Start Guide: Implement the Power of Go to Scrape and Crawl Data from the Web_. Packt Publishing, Birmingham, UK.
+
+[10] Matt Copperwaite and Charles Leifer. 2015. _Learning Flask Framework: Build Dynamic, Data-driven Websites and Modern Web Applications with Flask_. Packt Publishing, Birmingham, UK.
 
 TODO: Add references in the [ACM style](https://www.acm.org/publications/authors/reference-formatting). All references must be cited in the proposal.
