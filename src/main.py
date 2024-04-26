@@ -75,31 +75,33 @@ for page in corpus:
     print("Polarity " + str(page["Polarity"]))
     print("Subjectivity " + str(page["Subjectivity"]))
 
-print()
+# Worked for me, failed for tester
 
-happy_tc = HappyTextClassification("BERT", "ProsusAI/finbert", num_labels=3)
+# print()
 
-print("Happy Transformer: BERT Sentiment Analysis")
-for page in corpus:
-    page["Negative"] = []
-    page["Positive"] = []
-    page["Neutral"] = []
-    strings = [page["Content"][i:i+1000] for i in range(0, len(page["Content"]), 1000)]
-    for string in strings:
-        result = happy_tc.classify_text(string)
-        if result.label == "positive":
-            page["Positive"].append(result.score)
-            page["Neutral"].append(0)
-            page["Negative"].append(0)
-        elif result.label == "neutral":
-            page["Positive"].append(0)
-            page["Neutral"].append(result.score)
-            page["Negative"].append(0)
-        elif result.label == "negative":
-            page["Positive"].append(0)
-            page["Neutral"].append(0)
-            page["Negative"].append(result.score)
-    print(page["Title"])
-    print("Negative Score: " + str(round(sum(page["Negative"])/len(page["Negative"]), 2)))
-    print("Neutral Score: " + str(round(sum(page["Neutral"])/len(page["Neutral"]), 2)))
-    print("Positive Score: " + str(round(sum(page["Positive"])/len(page["Positive"]), 2)))
+# happy_tc = HappyTextClassification("BERT", "ProsusAI/finbert", num_labels=3)
+
+# print("Happy Transformer: BERT Sentiment Analysis")
+# for page in corpus:
+#     page["Negative"] = []
+#     page["Positive"] = []
+#     page["Neutral"] = []
+#     strings = [page["Content"][i:i+1000] for i in range(0, len(page["Content"]), 1000)]
+#     for string in strings:
+#         result = happy_tc.classify_text(string)
+#         if result.label == "positive":
+#             page["Positive"].append(result.score)
+#             page["Neutral"].append(0)
+#             page["Negative"].append(0)
+#         elif result.label == "neutral":
+#             page["Positive"].append(0)
+#             page["Neutral"].append(result.score)
+#             page["Negative"].append(0)
+#         elif result.label == "negative":
+#             page["Positive"].append(0)
+#             page["Neutral"].append(0)
+#             page["Negative"].append(result.score)
+#     print(page["Title"])
+#     print("Negative Score: " + str(round(sum(page["Negative"])/len(page["Negative"]), 2)))
+#     print("Neutral Score: " + str(round(sum(page["Neutral"])/len(page["Neutral"]), 2)))
+#     print("Positive Score: " + str(round(sum(page["Positive"])/len(page["Positive"]), 2)))
