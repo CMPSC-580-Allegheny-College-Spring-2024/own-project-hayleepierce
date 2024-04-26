@@ -2,6 +2,7 @@
 
 import os
 from bs4 import BeautifulSoup
+import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
 import matplotlib.pyplot as plt
@@ -31,18 +32,36 @@ def develop_corpus_html(directory: str) -> dict:
 
 corpus = develop_corpus_html('src/data/corpus')
 
-sia = SentimentIntensityAnalyzer()
+try:
 
-print("VADER Sentiment Analysis")
-for page in corpus:
-    sia_scores = sia.polarity_scores(page["Content"])
-    page["Negative"] = round(sia_scores["neg"] * 100, 2)
-    page["Neutral"] = round(sia_scores["neu"] * 100, 2)
-    page["Positive"] = round(sia_scores["pos"] * 100, 2)
-    print(page["Title"])
-    print(str(page["Negative"]) + "% Negative")
-    print(str(page["Neutral"]) + "% Neutral")
-    print(str(page["Positive"]) + "% Positive")
+    sia = SentimentIntensityAnalyzer()
+
+    print("VADER Sentiment Analysis")
+    for page in corpus:
+        sia_scores = sia.polarity_scores(page["Content"])
+        page["Negative"] = round(sia_scores["neg"] * 100, 2)
+        page["Neutral"] = round(sia_scores["neu"] * 100, 2)
+        page["Positive"] = round(sia_scores["pos"] * 100, 2)
+        print(page["Title"])
+        print(str(page["Negative"]) + "% Negative")
+        print(str(page["Neutral"]) + "% Neutral")
+        print(str(page["Positive"]) + "% Positive")
+
+except:
+    nltk.download('vader_lexicon')
+
+    sia = SentimentIntensityAnalyzer()
+
+    print("VADER Sentiment Analysis")
+    for page in corpus:
+        sia_scores = sia.polarity_scores(page["Content"])
+        page["Negative"] = round(sia_scores["neg"] * 100, 2)
+        page["Neutral"] = round(sia_scores["neu"] * 100, 2)
+        page["Positive"] = round(sia_scores["pos"] * 100, 2)
+        print(page["Title"])
+        print(str(page["Negative"]) + "% Negative")
+        print(str(page["Neutral"]) + "% Neutral")
+        print(str(page["Positive"]) + "% Positive")
 
 print()
 
