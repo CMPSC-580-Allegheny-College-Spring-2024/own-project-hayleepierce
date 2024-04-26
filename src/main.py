@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
-import matplotlib.pyplot as plt
 from happytransformer import HappyTextClassification
 
 def develop_corpus_html(directory: str) -> dict:
