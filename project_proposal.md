@@ -14,19 +14,11 @@
 
 ## Introduction
 
-```
-TODO: Introduce the proposed project, providing a concise summary of the project goals, its key elements, offering the reader a quick understanding of the research's scope. The section continues to outline the main topics, research questions, hypotheses, and /or theories in a clear and meaningful language to provide a type of roadmap for the reader to navigate the forthcoming details of the project. This section also needs to motivate the project by providing context for the study, outlining the current state of knowledge in the field, and highlighting any gaps or limitations in existing research. The section serves as a foundational guide that enables the reader to grasp the context of the study, in addition to its structure, before moving into a more technically-based discussion in the following sections of the article. In short, the "Introduction" section needs to answer the `what` and `why` questions, that is `what is the project?` and `why is the project important?`
-```
-
 The goal of this proposed project is to provide users with a way to detect bias within their sources. The project will use sentiment analysis to detect bias, with the theory that the more neutral the score the more unbiased the source is. The project will use the HTML representation of the users' sources, obtaining the HTML code through the process of web scraping. The HTML will be parsed using the Beautiful Soup library from Python. Sentiment analysis will then be performed, providing the user with the results. The project will take the form of a web application, built using Flask.
 
 This project will expand the literature on sentiment analysis, as the current literature primarily covers sentiment analysis in the context of social media, finacies, and public opinion. This project will also make the process of finding quality sources easier. Finding quality sources and detecting bias within sources is not only time consuming, but also effected by the researcher's bias. This project will reduce the time it takes to find quality sources and reduce effect of the user's bias.
 
 ## Literature Review
-
-```
-TODO (10 source minimum, with 5 of those being published peer-reviewed articles): Conduct literature review by describing relevant work related to the project and hence providing an overview of the state of the art in the area of the project. This section serves to contextualize the study within the existing body of literature, presenting a thorough review of relevant prior research and scholarly contributions. In clear and meaningful language, this section aims to demonstrate the problems, gaps, controversies, or unanswered questions that are associated with the current understanding of the topic. In addition, this section serves to highlight the current study's unique contribution to the field. By summarizing and critiquing existing works, this section provides a foundation for readers to appreciate the novelty and significance of the study in relation to the broader academic discourse. The "Literature Review" section further (in detail) contributes to the `why is the project important?` question.
-```
 
 ### Sentiment Analysis
 
@@ -50,10 +42,6 @@ Flask is a web framework that was written using Python. It can be used in conjun
 
 ## Prototype
 
-```
-TODO: Discuss the methods of the project to be able to answer the `how` question (`how was this project completed?`). For this section, you must describe  the methodology behind your implemented prototype. The methods section in an academic research outlines the specific procedures, techniques, and methodologies employed to conduct the study, offering a transparent and replicable framework for the research. It details the resources behind the work, in terms of, for example, the design of the algorithm and the experiment(s), data collection methods, applied software libraries, required tools, the types of statistical analyses and models which are applied to ensure the rigor and validity of the study. This section provides clarity for other researchers to understand and potentially replicate the study, contributing to the overall reliability and credibility of the research findings.
-```
-
 The data used for this prototype is in the form of HTML files. The collection of this data was done manually by right-clicking on a web page and saving the page's HTML code. These files are saved within the `data/corpus` folder.
 
 The processing of this data is done using the Beautiful Soup Python library [7]. A function called `develop_corpus_html()` was created that iterates through all the files within the `data/corpus` folder. The Beautiful Soup's `get_text()` function is used to extract the title and content from the files. This information is added to a dictionary and the dictionary is then added to a list. The function returns the list, which contains a dictionary for each of the files within the `data/corpus` folder.
@@ -61,10 +49,6 @@ The processing of this data is done using the Beautiful Soup Python library [7].
 Sentiment analysis is then performed of the content of each of the files. Three pre-trained sentiment analysis models are used: VADER, TextBlob, and finBERT. To use VADER, the `vader_lexicon` from NTLK must first be downloaded. Next, the `polarity_scores()` function is called using the content as the input. This function returns a positive, negative, and neutral score. TexBlob does not have any requirements, so to use this model all that needs to be run is `TextBlob()` with the content as the input. TextBlob produces a polarity and subjectivity score, which are accessed using `.sentiment.polarity` and `.sentiment.subjectivity` respectively. To use finBERT, the model first needs to be found by running the following function: `HappyTextClassification("BERT", "ProsusAI/finbert", num_labels=3)`. This model has a limit on the length of input; therefore, the content was split into strings of 1,000 characters. The average of all the results was then found to determine the positive, negative, and neutral score of the content, as a whole. All of these scores are displayed to the user along with the title of their corresponding file.
 
 ## Preliminary Results and Outcomes
-
-```
-TODO: Discuss the outcomes of your project in this section. Depending on the project type, the presented results and outcomes will vary. In some projects, you will be asked to present a theoretical analysis, and in others your experimental study and its results. In this section, you are also to demonstrate an enhanced version of your artifact by showing its capabilities and applications, in light of the evaluation metrics for assessing the artifact
-```
 
 The prototype of this project acted as an analysis of three different pre-trained sentiment analysis models are used: VADER, TextBlob, and finBERT. Using the results of the sentiment analysis, I reached the conclusion that none of the models are the best to use for this project, as they did not provide what I would consider to be accurate results.
 
@@ -84,10 +68,6 @@ The last model finBERT is a model of BERT that is pre-trained using finacial dat
 *Fig. 3. Results of finBERT sentiment analysis.*
 
 ## Conclusions and Future Work
-
-```
-TODO: Summarize your work and outline future steps needed to complete to take the project to the next stage (for example, if you were to continue with this project in 600/610). You must also address ethical implications of your project, especially as pertains to the public release or use of your software or methods.
-```
 
 Due the the results stated above, my next steps include investigating other sentiment analysis models. I plan to look for other pre-trained BERT models that are not trained on any specific type of data. I also plan to look at SentiWordNet, as the study done by Alaparthi and Mishra [2021] yeilded promising results [5]. If I find that these (and any other models I happen to find) do not produce adequate results, I will most likely use TextBlob, as it was the best of the three tested by this prototype.
 
@@ -119,7 +99,3 @@ the BERT model. _Social Network Analysis and Mining_ 11, 1 (March 2021) 1-11. <h
 [10] Sholom M. Weiss, Tong Zhang, Nitin Indurkhya, and Fred J. Damerau. 2010. _Text Mining: Predictive Methods for Analyzing Unstructured Information_. Springer Science & Business Media, New York, NY.
 
 [11] Matt Copperwaite and Charles Leifer. 2015. _Learning Flask Framework: Build Dynamic, Data-driven Websites and Modern Web Applications with Flask_. Packt Publishing, Birmingham, UK.
-
-```
-TODO: Add references in the [ACM style](https://www.acm.org/publications/authors/reference-formatting). All references must be cited in the proposal.
-```
