@@ -10,8 +10,21 @@ TODO: Outline the  main technical features of your prototype.
 
 ## Requirements
 
-TODO: Include the software and hardware needed to run your prototype. Be sure to specify the  versions of software used in your prototype.
+The required software needed for the prototype are as follows:
+
+* Beautiful Soup v4.9.3
+* NLTK v3.8.1
+* TextBlob v0.18.0
+* Happy Transformer v3.0.0
+  * Needed for finBERT (curretly commented out)
 
 ## Using the Prototype
 
-TODO: Provide details for how to run your artifact. Include specific commands and step by step instructions.
+To run the prototype do the following:
+
+1. Clone the repository
+2. Navigate to the repository's directory
+3. Install the required dependencies by using the following command:
+    * `python -m pip install -r requirements.txt`
+4. Run the program using the following command:
+    * `python src/main.py`
