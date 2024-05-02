@@ -18,6 +18,8 @@
 TODO: Introduce the proposed project, providing a concise summary of the project goals, its key elements, offering the reader a quick understanding of the research's scope. The section continues to outline the main topics, research questions, hypotheses, and /or theories in a clear and meaningful language to provide a type of roadmap for the reader to navigate the forthcoming details of the project. This section also needs to motivate the project by providing context for the study, outlining the current state of knowledge in the field, and highlighting any gaps or limitations in existing research. The section serves as a foundational guide that enables the reader to grasp the context of the study, in addition to its structure, before moving into a more technically-based discussion in the following sections of the article. In short, the "Introduction" section needs to answer the `what` and `why` questions, that is `what is the project?` and `why is the project important?`
 ```
 
+
+
 ## Literature Review
 
 ```
@@ -49,6 +51,12 @@ Flask is a web framework that was written using Python. It can be used in conjun
 ```
 TODO: Discuss the methods of the project to be able to answer the `how` question (`how was this project completed?`). For this section, you must describe  the methodology behind your implemented prototype. The methods section in an academic research outlines the specific procedures, techniques, and methodologies employed to conduct the study, offering a transparent and replicable framework for the research. It details the resources behind the work, in terms of, for example, the design of the algorithm and the experiment(s), data collection methods, applied software libraries, required tools, the types of statistical analyses and models which are applied to ensure the rigor and validity of the study. This section provides clarity for other researchers to understand and potentially replicate the study, contributing to the overall reliability and credibility of the research findings.
 ```
+
+The data used for this prototype is in the form of HTML files. The collection of this data was done manually by right-clicking on a web page and saving the page's HTML code. These files are saved within the `data/corpus` folder.
+
+The processing of this data is done using the Beautiful Soup Python library [7]. A function called `develop_corpus_html()` was created that iterates through all the files within the `data/corpus` folder. The Beautiful Soup's `get_text()` function is used to extract the title and content from the files. This information is added to a dictionary and the dictionary is then added to a list. The function returns the list, which contains a dictionary for each of the files within the `data/corpus` folder.
+
+Sentiment analysis is then performed of the content of each of the files. Three pre-trained sentiment analysis models are used: VADER, TextBlob, and finBERT. To use VADER, the `vader_lexicon` from NTLK must first be downloaded. Next, the `polarity_scores()` function is called using the content as the input. This function returns a positive, negative, and neutral score. TexBlob does not have any requirements, so to use this model all that needs to be run is `TextBlob()` with the content as the input. TextBlob produces a polarity and subjectivity score, which are accessed using `.sentiment.polarity` and `.sentiment.subjectivity` respectively. To use finBERT, the model first needs to be found by running the following function: `HappyTextClassification("BERT", "ProsusAI/finbert", num_labels=3)`. This model has a limit on the length of input; therefore, the content was split into strings of 1,000 characters. The average of all the results was then found to determine the positive, negative, and neutral score of the content, as a whole. All of these scores are displayed to the user along with the title of their corresponding file.
 
 ## Preliminary Results and Outcomes
 
