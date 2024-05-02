@@ -66,13 +66,21 @@ Sentiment analysis is then performed of the content of each of the files. Three 
 TODO: Discuss the outcomes of your project in this section. Depending on the project type, the presented results and outcomes will vary. In some projects, you will be asked to present a theoretical analysis, and in others your experimental study and its results. In this section, you are also to demonstrate an enhanced version of your artifact by showing its capabilities and applications, in light of the evaluation metrics for assessing the artifact
 ```
 
-I concluded that VADER would not be the best choice for my use case, as it did not provide what I would consider to be accurate results. TextBlob would be the better option; although, as previously mentioned it is not well-documented what data was used to train TextBlob.
+The prototype of this project acted as an analysis of three different pre-trained sentiment analysis models are used: VADER, TextBlob, and finBERT. Using the results of the sentiment analysis, I reached the conclusion that none of the models are the best to use for this project, as they did not provide what I would consider to be accurate results.
+
+VADER is pre-trained using social media posts, meaning the results are most accurate when analyzing social media content. The result of this model were extremely similar across the board. As the data used for the analysis was vastly different, the result indicate that the model is unable to detect these differences.
+
+TextBlob provided the best results of the three, but the documentation about what data was used to train the model is limited; therefore, it is not the most reliable. The results of this model are also in a different form than the other two, as it provides a polarity and subjectivity score instead of positive, netral, and negative scores. This difference makes it difficult to compare the results.
+
+The last model finBERT is a model of BERT that is pre-trained using finacial data. Similar to VADER, the results are most accurate when analyzing the data it was trained one (finacial data). The length limit on the input also makes the result less reliable, as the average of the results would be less acurate than a result from an analysis of the whole string.
 
 ## Conclusions and Future Work
 
 ```
 TODO: Summarize your work and outline future steps needed to complete to take the project to the next stage (for example, if you were to continue with this project in 600/610). You must also address ethical implications of your project, especially as pertains to the public release or use of your software or methods.
 ```
+
+
 
 ## References
 
