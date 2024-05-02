@@ -80,8 +80,8 @@ TextBlob provided the best results of the three, but the documentation about wha
 
 The last model finBERT is a model of BERT that is pre-trained using finacial data. Similar to VADER, the results are most accurate when analyzing the data it was trained one (finacial data). The length limit on the input also makes the result less reliable, as the average of the results would be less acurate than a result from an analysis of the whole string.
 
-![Results of TextBlob sentiment analysis.](img/textblob.png)
-*Fig. 3. Results of TextBlob sentiment analysis.*
+![Results of finBERT sentiment analysis.](img/finbert.png)
+*Fig. 3. Results of finBERT sentiment analysis.*
 
 ## Conclusions and Future Work
 
