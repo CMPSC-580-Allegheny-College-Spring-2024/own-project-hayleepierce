@@ -1,5 +1,0 @@
-beautifulsoup4
-nltk==3.8.1
-textblob
-# for finbert sentiment analysis
-# happytransformer
