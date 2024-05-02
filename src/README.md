@@ -2,7 +2,7 @@
 
 ## Key Features
 
-TODO: Outline the  main technical features of your prototype.
+The key feature of this prototype is performing sentiment analysis on the HTML files within the `data/corpus` folder. This prototype presents the user with the results of pre-trained models VADER, TextBlob, and finBERT.
 
 ## Requirements
 
