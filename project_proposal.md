@@ -18,7 +18,9 @@
 TODO: Introduce the proposed project, providing a concise summary of the project goals, its key elements, offering the reader a quick understanding of the research's scope. The section continues to outline the main topics, research questions, hypotheses, and /or theories in a clear and meaningful language to provide a type of roadmap for the reader to navigate the forthcoming details of the project. This section also needs to motivate the project by providing context for the study, outlining the current state of knowledge in the field, and highlighting any gaps or limitations in existing research. The section serves as a foundational guide that enables the reader to grasp the context of the study, in addition to its structure, before moving into a more technically-based discussion in the following sections of the article. In short, the "Introduction" section needs to answer the `what` and `why` questions, that is `what is the project?` and `why is the project important?`
 ```
 
+The goal of this proposed project is to provide users with a way to detect bias within their sources. The project will use sentiment analysis to detect bias, with the theory that the more neutral the score the more unbiased the source is. The project will use the HTML representation of the users' sources, obtaining the HTML code through the process of web scraping. The HTML will be parsed using the Beautiful Soup library from Python. Sentiment analysis will then be performed, providing the user with the results. The project will take the form of a web application, built using Flask.
 
+This project will expand the literature on sentiment analysis, as the current literature primarily covers sentiment analysis in the context of social media, finacies, and public opinion. This project will also make the process of finding quality sources easier. Finding quality sources and detecting bias within sources is not only time consuming, but also effected by the researcher's bias. This project will reduce the time it takes to find quality sources and reduce effect of the user's bias.
 
 ## Literature Review
 
@@ -64,7 +66,7 @@ Sentiment analysis is then performed of the content of each of the files. Three 
 TODO: Discuss the outcomes of your project in this section. Depending on the project type, the presented results and outcomes will vary. In some projects, you will be asked to present a theoretical analysis, and in others your experimental study and its results. In this section, you are also to demonstrate an enhanced version of your artifact by showing its capabilities and applications, in light of the evaluation metrics for assessing the artifact
 ```
 
-I performed sentiment analysis with 2 of the models mentioned above (VADER and TextBlob). I concluded that VADER would not be the best choice for my use case, as it did not provide what I would consider to be accurate results. TextBlob would be the better option; although, as previously mentioned it is not well-documented what data was used to train TextBlob.
+I concluded that VADER would not be the best choice for my use case, as it did not provide what I would consider to be accurate results. TextBlob would be the better option; although, as previously mentioned it is not well-documented what data was used to train TextBlob.
 
 ## Conclusions and Future Work
 
