@@ -89,7 +89,11 @@ The last model finBERT is a model of BERT that is pre-trained using finacial dat
 TODO: Summarize your work and outline future steps needed to complete to take the project to the next stage (for example, if you were to continue with this project in 600/610). You must also address ethical implications of your project, especially as pertains to the public release or use of your software or methods.
 ```
 
+Due the the results stated above, my next steps include investigating other sentiment analysis models. I plan to look for other pre-trained BERT models that are not trained on any specific type of data. I also plan to look at SentiWordNet, as the study done by Alaparthi and Mishra [2021] yeilded promising results [5]. If I find that these (and any other models I happen to find) do not produce adequate results, I will most likely use TextBlob, as it was the best of the three tested by this prototype.
 
+After I decide on a model for sentiment analysis, I then need to implement my process of data gathering and processing. This process will use methods of web scrapign and text mining, as well as utilize the Beautiful Soup Python library.
+
+Finally, a user interface will need to be developed, which will be done using Flask. The interface will allow the user to add new sources, remove old ones, and view the scores of all the added sources.
 
 ## References
 
