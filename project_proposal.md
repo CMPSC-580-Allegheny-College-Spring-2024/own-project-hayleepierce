@@ -52,19 +52,19 @@ Sentiment analysis is then performed of the content of each of the files. Three 
 
 The prototype of this project acted as an analysis of three different pre-trained sentiment analysis models are used: VADER, TextBlob, and finBERT. Using the results of the sentiment analysis, I reached the conclusion that none of the models are the best to use for this project, as they did not provide what I would consider to be accurate results.
 
-VADER is pre-trained using social media posts, meaning the results are most accurate when analyzing social media content. The result of this model were extremely similar across the board. As the data used for the analysis was vastly different, the result indicate that the model is unable to detect these differences.
+VADER is pre-trained using social media posts, meaning the results are most accurate when analyzing social media content. The result of this model were extremely similar across the board, as shown by Figure 1. As the data used for the analysis was vastly different, the result indicate that the model is unable to detect these differences.
 
 ![Results of VADER sentiment analysis.](img/vader.png)
 
 *Fig. 1. Results of VADER sentiment analysis.*
 
-TextBlob provided the best results of the three, but the documentation about what data was used to train the model is limited; therefore, it is not the most reliable. The results of this model are also in a different form than the other two, as it provides a polarity and subjectivity score instead of positive, netral, and negative scores. This difference makes it difficult to compare the results.
+TextBlob provided the best results of the three, as shown in Figure 2, with the results appearing to differ based on the content provided. Although the documentation about what data was used to train the model is limited; therefore, the model is less reliable. The results of this model are also in a different form than the other two, as it provides a polarity and subjectivity score instead of positive, neutral, and negative scores. This difference makes it difficult to compare these results to the results of the other two models.
 
 ![Results of TextBlob sentiment analysis.](img/textblob.png)
 
 *Fig. 2. Results of TextBlob sentiment analysis.*
 
-The last model finBERT is a model of BERT that is pre-trained using finacial data. Similar to VADER, the results are most accurate when analyzing the data it was trained one (finacial data). The length limit on the input also makes the result less reliable, as the average of the results would be less acurate than a result from an analysis of the whole string.
+The last model finBERT is a model of BERT that is pre-trained using finacial data. Similar to VADER, the results are most accurate when analyzing the data that was used to train it (finacial data). Figure 3 displays this disparity, with file 6 (an article about stocks) having drastically different results. The length limit on the input also makes the result less reliable, as the average of the results would be less acurate than a result from an analysis of the whole string.
 
 ![Results of finBERT sentiment analysis.](img/finbert.png)
 
