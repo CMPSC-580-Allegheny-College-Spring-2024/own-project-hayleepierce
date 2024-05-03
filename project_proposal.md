@@ -22,11 +22,11 @@ The current literature primarily covers sentiment analysis in the context of soc
 
 ### Sentiment Analysis
 
-Sentiment analysis is the process of identifying the emotion/tone behind a piece of text. There are numerous models that are pre-trained to perform sentiment analysis, including VADER (Valence Aware Dictionary and sEntiment Reasoner), TextBlob, and BERT (Bidirectional Encoder Representations from Transformers). 
+Sentiment analysis is the process of identifying the emotion/tone behind a piece of text. There are numerous models that are pre-trained to perform sentiment analysis, including VADER (Valence Aware Dictionary and sEntiment Reasoner), TextBlob, and BERT (Bidirectional Encoder Representations from Transformers).
 
-The majority of existing literature uses VADER and/or TextBlob to analyze text from social media posts [1, 2, 3]. The VADER model provides a positive, negative, and neutral score that add to a total of 100. A downside to this model is that it was trained using data from social media; consequently, analysis of any other type of text is not guaranteed to be accurate. The TextBlob model produces a polarity score between -1 and 1 and a subjectivity score between 0 and 1. Unfortunately, the documentation about what data was used to train the model is lacking.
+The majority of existing literature uses VADER and/or TextBlob to analyze text from social media posts [1, 2, 3]. The VADER model provides a positive, negative, and neutral score that adds to a total of 100. A downside to this model is that it was trained using data from social media; consequently, the analysis of any other type of text is not guaranteed to be accurate. The TextBlob model produces a polarity score between -1 and 1 and a subjectivity score between 0 and 1. Unfortunately, the documentation about what data was used to train the model is minimal.
 
-Some of the literature uses BERT to perform sentiment analysis; for example, Singh et. al. [2021] classifies the emotion of tweets relating to COVID-19 using the BERT model [4]. Alaparthi and Mishra [2021] look at four different methods of performing sentiment analysis, two of them being the BERT and SentiWordNet models [5].
+Some of the literature uses BERT to perform sentiment analysis; for example, Singh et. al. [2021] classifies the emotion of tweets relating to COVID-19 using a version of the BERT model [4]. Alaparthi and Mishra [2021] look at four different methods of performing sentiment analysis, two of them being the BERT and SentiWordNet models [5].
 
 ### Data: Gathering and Preparation
 
