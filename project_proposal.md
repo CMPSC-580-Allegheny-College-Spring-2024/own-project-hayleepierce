@@ -72,11 +72,11 @@ The last model finBERT is a model of BERT that is pre-trained using financial da
 
 ## Conclusions and Future Work
 
-Due the the results stated above, my next steps include investigating other sentiment analysis models. I plan to look for other pre-trained BERT models that are not trained on any specific type of data. I also plan to look at SentiWordNet, as the study done by Alaparthi and Mishra [2021] yeilded promising results [5]. If I find that these (and any other models I happen to find) do not produce adequate results, I will most likely use TextBlob, as it was the best of the three tested by this prototype.
+Due to the results of this prototype, as explained above, my next steps include investigating other sentiment analysis models. I plan to look for other pre-trained BERT models that are not trained on one specific type of textual data but are trained on a vast array of types. Specifically, I plan to look at SentiWordNet, as the study done by Alaparthi and Mishra [2021] yielded promising results [5]. If I find that SentiWordNet and any other models I find do not produce adequate results, I will most likely use TextBlob, as it was the best of the three tested by this prototype. TextBlob also brings subjectivity into play, which could make it easier to detect bias in sources.
 
-After I decide on a model for sentiment analysis, I then need to implement my process of data gathering and processing. This process will use methods of web scrapign and text mining, as well as utilize the Beautiful Soup Python library.
+After I decide on a model for sentiment analysis, I then need to automate the process of data gathering and process. Currently the process is done manually and the data is not being cleaned before sentiment analysis. Automating the process of data gathering will make this application easier to use and cleaning the data before performing sentiment analysis will increase the accuracy of the results. This process will use methods of web scraping and text mining and utilize the Beautiful Soup Python library.
 
-Finally, a user interface will need to be developed, which will be done using Flask. The interface will allow the user to add new sources, remove old ones, and view the scores of all the added sources.
+Finally, a user interface will need to be developed, to provide the user with a way to easily interact with and use the application. This interface will be developed using Flask. The interface will allow the user to add new sources, remove old ones, and view the scores of all the added sources.
 
 ## References
 
