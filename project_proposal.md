@@ -30,15 +30,15 @@ Some of the literature uses BERT to perform sentiment analysis; for example, Sin
 
 ### Data: Gathering and Preparation
 
-Web scraping is the process of extracting data from websites. Vincent Smith [2019] discusses web scraping in-depth and walks the reader through the process of developing a web scraping tool using the programming language Go [6].
+Web scraping is the process of extracting data from the web. Vincent Smith [2019] discusses web scraping in-depth and walks the reader through the process of developing a web scraping tool using the programming language Go [6]. This walk-through can be used to not only build a web scraper but also implement web scraping into other types of projects.
 
 The Beautiful Soup Python library allows for the parsing of HTML files [7]. This library can be used to find specific information from the HTML files obtained by scraping the web, such as the URL and the title. It can also be used to prepare a string of text for analysis. Yongquan Li [2022] used several Python libraries, including the Beautiful Soup library to discuss methods of data collecting and HTML parsing [8].
 
-Text mining is the process of deducing meaningful information from the patterns and trends found within text. One book written on this process covers several algorithms that are used to mine text, discussing the theory behind them and how to apply them [9]. Another book on text mining focuses on the process of mining through text that is unstructured and how the process is different than mining through structured text [10].
+Text mining is the process of deducing meaningful information from the patterns and trends found within text. One book written on this process covers several algorithms that are used to mine text, discussing the theory behind them and how to apply them in practice [9]. Another book on text mining focuses on the process of mining through text that is unstructured and how it differs from the process of mining through structured text [10].
 
 ### User Interface
 
-Flask is a web framework that was written using Python. It can be used in conjunction with other libraries to build a web application and provide users with a friendly interface to interact with. Matt Copperwaite and Charles Leifer [2015] wrote a book that provides helpful explanations of Flask [10].
+Flask is a web framework that was written using Python. It can be used in conjunction with other libraries to build a web application and provide users with a friendly interface to interact with. Matt Copperwaite and Charles Leifer [2015] wrote a book that provides helpful explanations of Flask, walking the reader through how to build a web application using Flask [10].
 
 ## Prototype
 
